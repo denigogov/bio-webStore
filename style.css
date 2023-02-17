@@ -1,0 +1,129 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --prime-color: #080247;
+  --color-section: #f1f1f1;
+  --color-btn: #1fa31d;
+  --color--dark-btn: #10860e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(./assest/hero-img.jpg);
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  text-align: center;
+  color: var(--prime-color);
+  padding: 1rem;
+}
+
+.hero__text p {
+  padding: 1rem;
+  font-weight: 200;
+}
+
+.hero__text-btn {
+  padding: 0.8em 2em;
+  color: #fff;
+  background: var(--color-btn);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hero__text-btn:hover {
+  background: var(--color--dark-btn);
+}
+.hero__text-btn:active {
+  font-size: 12.5px;
+}
+
+/* Our Menu Section */
+.ourMenu {
+  /* GO KORISTAM PORADI POTREBA ZA SITE CARDS AMA TREBA DA SE TRGNE I DA SE STAVA NA DRUGO MESTO AKO MOZE !! */
+  margin-bottom: 4rem;
+}
+
+.ourMenu h1 {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+}
+
+.ourMenu__icons {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  cursor: pointer;
+}
+.ourMenu__icons img {
+  width: 40px;
+}
+
+/* SALAD PART SECTION */
+.ourMenu_salad--section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: calc(70% - 10vw);
+  margin: 0 auto;
+  display: none;
+}
+
+.ourMenu__salad {
+  margin-top: 10rem;
+  height: calc(400px - 4vw);
+  width: calc(450px - 4vw);
+  text-align: center;
+  background-color: var(--color-section);
+  padding: 1rem;
+  position: relative;
+}
+.salad {
+  margin-top: -100px;
+  width: calc(250px - 2vw);
+  padding-bottom: 2rem;
+}
+
+.ourMenu__salad-name {
+  padding-bottom: 20px;
+  font-weight: 600;
+  color: var(--prime-color);
+}
+
+.ourMenu__salad--icons img {
+  margin: 1.5rem 15px 0 15px;
+  width: 30px;
+}
